@@ -17,4 +17,4 @@ Also, the orientation of greem arrow is north.
 The function of this file is to visualize accelaration of the car in 2D.
 
 ## orientation.cpp
-This file is to visulize the orientation of the vehicle in a sky blue arrow.
+This file is to visualize the orientation of the vehicle in a sky blue arrow.
