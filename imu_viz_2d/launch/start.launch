@@ -4,4 +4,5 @@
 
     <node pkg="imu_viz_2d" type="imu_frame" name="frame" />
     
+    <node pkg="imu_viz_2d" type="orientation" name="orientation" />
   </launch>

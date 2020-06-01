@@ -116,7 +116,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-# include
+  include
   ${catkin_INCLUDE_DIRS}
 )
 
@@ -211,3 +211,6 @@ target_link_libraries(imu_viz_2d ${catkin_LIBRARIES})
 
 add_executable(imu_frame src/frame.cpp)
 target_link_libraries(imu_frame ${catkin_LIBRARIES})
+
+add_executable(orientation src/orientation.cpp)
+target_link_libraries(orientation ${catkin_LIBRARIES})
