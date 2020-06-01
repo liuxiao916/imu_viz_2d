@@ -1,7 +1,0 @@
-<launch>
-     <!-- Turtlesim Node-->
-    <node pkg="imu_viz_2d" type="imu_viz_2d" name="imu_viz"/>
-
-    <node pkg="imu_viz_2d" type="imu_frame" name="frame" />
-    
-  </launch>
