@@ -86,13 +86,9 @@ void Callback_SPHERE(const sensor_msgs::Imu& msg)
     imu.pose.orientation.w = 1.0;
 
     // Set the scale of the marker -- 1x1x1 here means 1m on a side
-<<<<<<< HEAD
+
     imu.scale.x = 0.3;
     imu.scale.y =  0.3;
-=======
-    imu.scale.x = 0.1;
-    imu.scale.y =  0.1;
->>>>>>> 90286f4dd0262b2f67fe6e029cdfc8c9d4c70078
     imu.scale.z = 0.1;
 
     // Set the color -- be sure to set alpha to something non-zero!

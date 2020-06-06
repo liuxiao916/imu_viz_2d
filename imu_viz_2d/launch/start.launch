@@ -5,13 +5,12 @@
     <node pkg="imu_viz_2d" type="imu_frame" name="frame" />
     
     <node pkg="imu_viz_2d" type="orientation" name="orientation" />
-<<<<<<< HEAD
+
     
     <node pkg="imu_viz_2d" type="polar02g" name="polar_02g" />
     <node pkg="imu_viz_2d" type="polar04g" name="polar_04g" />
     <node pkg="imu_viz_2d" type="polar06g" name="polar_06g" />
 
     <node name="republish" type="republish" pkg="image_transport" args="compressed in:=/camera_array/cam0/image_raw raw out:=/camera" />
-=======
->>>>>>> 90286f4dd0262b2f67fe6e029cdfc8c9d4c70078
+
   </launch>

@@ -214,3 +214,12 @@ target_link_libraries(imu_frame ${catkin_LIBRARIES})
 
 add_executable(orientation src/orientation.cpp)
 target_link_libraries(orientation ${catkin_LIBRARIES})
+
+add_executable(polar02g src/polar_02g.cpp)
+target_link_libraries(polar02g ${catkin_LIBRARIES})
+
+add_executable(polar04g src/polar_04g.cpp)
+target_link_libraries(polar04g ${catkin_LIBRARIES})
+
+add_executable(polar06g src/polar_06g.cpp)
+target_link_libraries(polar06g ${catkin_LIBRARIES})

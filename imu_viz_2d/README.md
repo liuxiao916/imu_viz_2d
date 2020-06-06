@@ -29,5 +29,4 @@ I add a node to republish sensor_msgs/compressedimage to sensor_msgs/image,
 but it consumes lots of CPU.
 
 You can cancel it in launch file.
-=======
->>>>>>> 90286f4dd0262b2f67fe6e029cdfc8c9d4c70078
+
