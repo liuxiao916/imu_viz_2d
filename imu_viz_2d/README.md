@@ -18,6 +18,7 @@ The function of this file is to visualize accelaration of the car in 2D.
 
 ## orientation.cpp
 This file is to visualize the orientation of the vehicle in a sky blue arrow.
+<<<<<<< HEAD
 
 ## polar
 Use to draw polar coordinates. 0.2g, 0.4g and 0.6g
@@ -28,3 +29,5 @@ I add a node to republish sensor_msgs/compressedimage to sensor_msgs/image,
 but it consumes lots of CPU.
 
 You can cancel it in launch file.
+=======
+>>>>>>> 90286f4dd0262b2f67fe6e029cdfc8c9d4c70078
