@@ -1,11 +1,11 @@
 <launch>
-     <!-- Turtlesim Node-->
-    <node pkg="imu_viz_2d" type="imu_viz_2d" name="imu_viz"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find imu_viz_2d)/rviz/imu.rviz" required="true" />
+    <node pkg="imu_viz_2d" type="imu_viz_2d" name="imu_viz" args="/imu_raw"/>
 
     <node pkg="imu_viz_2d" type="imu_frame" name="frame" />
     
-    <node pkg="imu_viz_2d" type="orientation" name="orientation" />
-
+    <node pkg="imu_viz_2d" type="orientation" name="orientation"   args="/imu_raw"/>
+    <node pkg="imu_viz_2d" type="trans_GPS" name="trans_GPS"   args="/novatel_data/inspvax "/>
     
     <node pkg="imu_viz_2d" type="polar02g" name="polar_02g" />
     <node pkg="imu_viz_2d" type="polar04g" name="polar_04g" />

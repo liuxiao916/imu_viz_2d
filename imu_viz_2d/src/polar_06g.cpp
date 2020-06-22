@@ -8,7 +8,7 @@ main (int argc, char **argv)
     //initalization
     ros::init (argc, argv, "showpolar_06g");
     ros::NodeHandle ph;
-    ros::Rate r(5);
+    ros::Rate r(50);
     ros::Publisher path_pub = ph.advertise<nav_msgs::Path>("polar_06g",1, true);
 
     ros::Time current_time, last_time;
@@ -28,7 +28,7 @@ main (int argc, char **argv)
     double th = 0.0;
      double delta_th = 0.1;
 
-    while (ros::ok())
+    while (th<14)
     {
 
         current_time = ros::Time::now();
@@ -51,6 +51,6 @@ main (int argc, char **argv)
         last_time = current_time;
         r.sleep();
     }
-
+    ros::shutdown();
     return 0;
 }
