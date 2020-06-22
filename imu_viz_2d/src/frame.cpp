@@ -8,7 +8,8 @@ int main( int argc, char** argv )
   ros::Rate r(5);
   ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("imu_frame", 10);
 
-  while (ros::ok())
+  int i=0;
+  while (i<50)
   {
     visualization_msgs::Marker x, y;
     // Set the frame ID and timestamp.  See the TF tutorials for information on these.
@@ -64,5 +65,8 @@ int main( int argc, char** argv )
     marker_pub .publish(x);
 
     r.sleep();
+    i++;
   }
+  ros::shutdown();
+  return 0;
 }
