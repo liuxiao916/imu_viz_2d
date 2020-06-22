@@ -118,6 +118,7 @@ catkin_package(
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
+  ~/catkin_ws/devel/include
 )
 
 ## Declare a C++ library
@@ -223,3 +224,6 @@ target_link_libraries(polar04g ${catkin_LIBRARIES})
 
 add_executable(polar06g src/polar_06g.cpp)
 target_link_libraries(polar06g ${catkin_LIBRARIES})
+
+add_executable(trans_GPS src/trans_GPS.cpp)
+target_link_libraries(trans_GPS ${catkin_LIBRARIES})
