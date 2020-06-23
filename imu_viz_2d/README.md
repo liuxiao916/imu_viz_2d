@@ -8,7 +8,7 @@ to run the package
 The article about this package:
 https://medium.com/@hitlx916/visualize-imu-msg-from-scratch-2d-ros-rviz-b7869a804e36?source=friends_link&sk=eedc8762c40365986bd09c0cf209ed52
 
-# There is three cpp file 
+# The function of each cpp file 
 ## frame.cpp
 This is to draw a coordinate. Blue arrow is x nad green is y.
 Also, the orientation of greem arrow is north.
@@ -18,10 +18,14 @@ The function of this file is to visualize accelaration of the car in 2D.
 
 ## orientation.cpp
 This file is to visualize the orientation of the vehicle in a sky blue arrow.
-<<<<<<< HEAD
 
 ## polar
 Use to draw polar coordinates. 0.2g, 0.4g and 0.6g
+
+## trans_GPS
+Republish novatel_msgs/INSPVAX to sensor_msgs/NavSatFix
+So novatel driver is needed
+https://novatel.com/products/firmware-options-pc-software/drivers-for-ros
 
 ---
 ### WARNING
